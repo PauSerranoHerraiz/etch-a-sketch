@@ -1,5 +1,13 @@
 const container = document.getElementById("grid-container");
 
+function getRandomColor(){
+    const r = Math.floor(Math.random() * 256)
+    const g = Math.floor(Math.random() * 256)
+    const b = Math.floor(Math.random() * 256)
+
+    return `rgb(${r}, ${g}, ${b})`
+}
+
 function createGrid(size) {
   container.innerHTML = "";
 
@@ -14,9 +22,9 @@ function createGrid(size) {
 
     container.appendChild(square);
 
-    square.addEventListener("mouseenter", () => {
-      square.style.backgroundColor = "black";
-    });
+   square.addEventListener("mouseover", () => {
+  square.style.backgroundColor = getRandomColor();
+});
   }
 }
 

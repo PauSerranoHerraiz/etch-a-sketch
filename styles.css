@@ -1,9 +1,17 @@
-body{
+body {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: center;
-    margin: 0 ;
+    margin: 0;
     font-family: sans-serif;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 12px;
 }
 
 #grid-container {
@@ -12,9 +20,11 @@ body{
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
+    border: 2px solid #333;
 }
 
 .square {
     box-sizing: border-box;
     border: 1px solid #ddd;
+    border-radius: 6px;
 }
