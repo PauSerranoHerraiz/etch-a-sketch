@@ -4,6 +4,7 @@ body {
     align-items: center;
     margin: 0;
     font-family: sans-serif;
+    background-color: rgb(244, 235, 243);
 }
 
 button {
@@ -15,8 +16,8 @@ button {
 }
 
 #grid-container {
-    width: 960px;
-    height: 960px;
+    width: 600px;
+    height: 600px;
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;

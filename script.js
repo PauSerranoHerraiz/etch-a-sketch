@@ -11,7 +11,7 @@ function getRandomColor(){
 function createGrid(size) {
   container.innerHTML = "";
 
-  const squareSize = 960 / size;
+  const squareSize = 600 / size;
 
   for (let i = 0; i < size * size; i++) {
     const square = document.createElement("div");
