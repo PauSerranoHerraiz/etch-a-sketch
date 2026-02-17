@@ -31,6 +31,7 @@ function createGrid(size) {
 createGrid(16);
 
 const resizeBtn = document.getElementById("resizeBtn");
+const resetBtn = document.getElementById("resetBtn")
 
 resizeBtn.addEventListener("click", ()=>{
     let newSize = prompt ("Enter the number of squares per side (maximum 100):")
@@ -44,4 +45,9 @@ resizeBtn.addEventListener("click", ()=>{
     else {
         alert ("Please, enter a valid number between 1 and 100")
     }
+})
+
+resetBtn.addEventListener("click", ()=>{
+    const size =Math.sqrt(container.childElementCount) || 16;
+    createGrid(size);
 })
